@@ -1,0 +1,39 @@
+[gd_scene load_steps=3 format=3 uid="uid://bdlx1tlhei1ms"]
+
+[ext_resource type="Texture2D" uid="uid://1gilicn32246" path="res://Asset Packs/cavesofgallet_tiles.png" id="1_0seli"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mp755"]
+size = Vector2(192, 16)
+
+[node name="Platform" type="StaticBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_mp755")
+one_way_collision = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+texture_repeat = 2
+position = Vector2(80, 0)
+scale = Vector2(2, 2)
+texture = ExtResource("1_0seli")
+region_enabled = true
+region_rect = Rect2(48, 8, 16, 8)
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(-16, 0)
+scale = Vector2(20, 2)
+texture = ExtResource("1_0seli")
+region_enabled = true
+region_rect = Rect2(48, 8, 8, 8)
+
+[node name="Sprite2D3" type="Sprite2D" parent="."]
+texture_filter = 1
+texture_repeat = 2
+position = Vector2(-80, 0)
+scale = Vector2(2, 2)
+texture = ExtResource("1_0seli")
+flip_h = true
+region_enabled = true
+region_rect = Rect2(48, 8, 16, 8)

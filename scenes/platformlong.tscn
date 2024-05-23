@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://cqohtl23mhypx"]
+
+[ext_resource type="PackedScene" uid="uid://bdlx1tlhei1ms" path="res://scenes/platform.tscn" id="1_4senh"]
+
+[node name="Platform" instance=ExtResource("1_4senh")]
+
+[node name="Sprite2D" parent="." index="0"]
+scale = Vector2(0.8, 0.1)

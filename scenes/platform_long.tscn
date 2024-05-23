@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://crxqxf0eyuqkq"]
+
+[ext_resource type="Texture2D" uid="uid://csuo6lyufdsno" path="res://textureatlasraw.png" id="1_inkeq"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_falvw"]
+size = Vector2(384, 20)
+
+[node name="PlatformLong" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(3.99999, 9.53674e-07)
+scale = Vector2(0.816667, 0.266667)
+texture = ExtResource("1_inkeq")
+region_enabled = true
+region_rect = Rect2(640, 860, 480, 60)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_falvw")
+one_way_collision = true
